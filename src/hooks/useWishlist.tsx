@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { supabase } from '@/integrations/supabase/client';
-import { useAuth } from './useAuth';
+import { useAuth } from '@/hooks/useAuth';
 import { toast } from '@/hooks/use-toast';
 
-export const useWishlist = () => {
+export function useWishlist() {
   const { user } = useAuth();
   const [wishlistItems, setWishlistItems] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
@@ -103,4 +103,4 @@ export const useWishlist = () => {
     isInWishlist,
     refetch: fetchWishlist,
   };
-};
+}
