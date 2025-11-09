@@ -207,7 +207,7 @@ const Analytics = () => {
                                                     {data.month}
                                                 </span>
                                                 <span className="text-xs text-muted-foreground">
-                                                    $
+                                                    Tk.
                                                     {(
                                                         data.sales / 1000
                                                     ).toFixed(0)}
@@ -249,7 +249,7 @@ const Analytics = () => {
                                                 </div>
                                                 <div className="text-right">
                                                     <p className="font-bold text-primary">
-                                                        $
+                                                        Tk.
                                                         {product.revenue.toLocaleString()}
                                                     </p>
                                                     <p className="text-sm text-muted-foreground">
